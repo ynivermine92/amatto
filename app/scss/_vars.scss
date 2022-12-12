@@ -1,0 +1,49 @@
+$span : #FFCC29;    
+
+%com-300{
+    font-family: 'Commissioner-Light', sans-serif;
+    font-weight: 300;
+}
+%com-400{
+    font-family: 'Commissioner-Regular', sans-serif;
+    font-weight: 400;
+}
+%com-500{
+    font-family: 'Commissioner-Medium', sans-serif;
+    font-weight: 500;
+}
+%com-600{
+    font-family: 'Commissioner-SemiBold', sans-serif;
+    font-weight: 600;
+}
+%com-700{
+    font-family: 'PlayfairDisplay-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%Pl-600{
+    font-family: 'PlayfairDisplay-SemiBold', sans-serif;
+    font-weight: 600;
+}
+%Pl-700{
+    font-family: 'PlayfairDisplay-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%btn{
+    background-color: #FFCC29;
+    padding: 16px 44px;
+    font-size: 18px;
+    @extend %com-500;
+    color: #39373A;
+    border-radius: 40px;
+}
+//скрывает input за лементом
+/* %checkbox-hidden,
+%radio-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute ;
+} */

@@ -1,0 +1,190 @@
+
+@import  'app/scss/vars' ;
+@import  'app/scss/fonts';
+@import  'app/scss/libs';
+@import  'app/scss/reset';
+@import  'app/scss/global'; 
+/*npm uninstall*/
+.main{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.header{
+    padding: 40px 40px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu{
+    &__list{
+        display: flex;
+    }
+    &__list-item{
+        font-size: 16px;
+        @extend %com-500;
+
+    }
+    &__list-item + .menu__list-item{
+        margin-left: 68px;
+    }
+    &__list-item--active{
+        font-size: 16px;
+        @extend %com-500;
+        position: relative;
+        color: #FFCC29;
+        &::before{
+            content: '';
+            position: absolute;
+            border-bottom: 2px solid  #FFCC29;
+            margin-top: 2px;
+            width: 100%;
+            bottom: -4px;
+        }
+        
+    }
+}   
+.uzer-mobil{
+    &__tel{
+       @extend %btn;
+    }
+ }
+.top-slider{
+    &__inner{
+        max-width: 1600px;
+        height: 750px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+    }
+    &__title{
+        padding-top: 120px;
+        text-align:center;
+        @extend %Pl-700;
+        font-size: 80px;
+        color: #ffff
+    }
+    &__subtitle{
+        text-align:center;
+        @extend %com-400;
+        font-size: 22px;
+        color: #ffff;
+        padding: 10px 0 30px ;
+    }
+    &__benefits{
+        max-width: 331px;
+        margin: 0 auto;
+    }
+    &__benefits-item{
+        padding-left: 39px;
+        font-size: 16px;
+        @extend %com-400;
+        color: #fff;
+        margin-bottom: 28px;
+    }
+    &__benefits-icon{
+       margin-bottom: -26px;
+    } 
+    span{
+        margin-right: 4px;
+        color: #FFCC29;
+        font-size: 16px;
+    }
+    &__consultation{
+        text-align: center;
+        padding-top: 56px;
+    }
+    &__consultation-btnlink{
+        background-color: #FFCC29;
+        padding: 20px 25px;
+        font-size: 16px;
+        @extend %com-500;
+        color: #39373A;
+        border-radius: 40px;
+        margin-left: -24px
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 22px;
+    left: 48%;
+    right: 50%;
+    li{
+        padding: 0px 5px;
+        line-height: 0;
+    }
+    button {
+        padding:0 5px;
+        border-width: 0;
+        background-color:#ffff;
+        border-radius: 50%;
+        width: 9.58px;
+        height: 9.58px;
+        font-size: 0;
+        bottom: 0;
+        border: none;
+    }
+}
+.slick-active{
+    button {
+        padding:0 5px;
+        border-width: 0;
+        background-color:#FFCC29;
+        border-radius: 50%;
+        width: 9.58px;
+        height: 9.58px;
+        font-size: 0;
+        bottom: 0;
+    }
+    
+}
+
+.promo{
+    padding-bottom: 100px;
+    .title{
+        position: relative;
+    }
+    &__inner{
+        padding-top: 64px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        @extend %com-600;
+    }
+    &__item{
+        width: 265px;
+        height: 370px;
+        font-size: 22px;
+        color: #ffff;
+        padding: 250px 0px 38px 19px;
+        line-height: 27px;
+        span{
+            color: $span;
+        }
+    }
+}
+
+.clock{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@import  'app/scss/medea';  
+
