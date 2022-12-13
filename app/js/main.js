@@ -16,11 +16,11 @@ $(function(){
   }
   
   function initializeClock(id, endtime) {
-    const clock = document.querySelector('.promo__clock');
-    const daysSpan = clock.querySelector('.promo__days');
-    const hoursSpan = clock.querySelector('.promo__hours');
-    const minutesSpan = clock.querySelector('.promo__minutes');
-    const secondsSpan = clock.querySelector('.promo__seconds');
+    const clock = document.querySelector('.clock__items');
+    const daysSpan = clock.querySelector('.clock__days');
+    const hoursSpan = clock.querySelector('.clock__hours');
+    const minutesSpan = clock.querySelector('.clock__minutes');
+    const secondsSpan = clock.querySelector('.clock__seconds');
   
     function updateClock() {
       const t = getTimeRemaining(endtime);
@@ -39,13 +39,8 @@ $(function(){
     const timeinterval = setInterval(updateClock, 1000);
   }
   
-  const deadline = $('.promo__clock').attr('data-time');
-  initializeClock('promo__clock', deadline);
-})
-
-
-
-
+  const deadline = $('.clock__items').attr('data-time');
+  initializeClock('clock__items', deadline);
 
   $('.top-slider__container').slick({
     dots: true,
@@ -55,9 +50,8 @@ $(function(){
     autoplaySpeed:2000
 
   });
-
-
 })
+
 /* 
   $('.blog-page__slider').slick({
     nextArrow :'<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="26px" viewBox="0 0 9 14" version="1.1"><path d="M 7.835938 6.382812 C 8.1875 6.722656 8.1875 7.277344 7.835938 7.621094 L 3.335938 11.996094 C 2.984375 12.335938 2.414062 12.335938 2.0625 11.996094 C 1.710938 11.652344 1.710938 11.097656 2.0625 10.757812 L 5.925781 7 L 2.0625 3.242188 C 1.710938 2.902344 1.710938 2.347656 2.0625 2.003906 C 2.414062 1.664062 2.988281 1.664062 3.339844 2.003906 L 7.839844 6.378906 Z M 7.835938 6.382812 "/></g></svg></button>',

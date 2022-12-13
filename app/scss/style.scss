@@ -173,11 +173,112 @@
 }
 
 .clock{
-
+    height: 492px;
+    &__inner{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        max-width: 388px;
+        margin-left: auto;
+        text-align: center;
+    }
+    .title{
+        color: #ffff;
+        span{
+            color: $span;
+            position: relative;
+            &::before{
+                content: '';
+                width: 100px;
+                height: 5px;
+                background: #FFCC29;
+                position: absolute;
+                bottom: -14px;
+                left: -47%;
+                z-index: 1;
+            }
+        }
+    }
+    .subtitle{
+        padding-top: 30px;
+        font-size: 18px;
+        color: #ffff;
+        @extend %com-400;
+    }
+    &__title{
+        font-size: 32px;
+        @extend %com-600;
+        color: #fff;
+        padding: 15px;
+        margin-bottom: 18px;
+    }
+    &__link-btn{
+        padding: 8px 60px;
+        font-size: 20px;
+        @extend %com-400;
+        background-color: $span;
+        border-radius: 45px;
+        display: block;
+        max-width: 358px;
+        margin: 0 auto;
+        color: #39373A;   
+    }
+    &__taim-title{
+        font-size: 36px;
+        @extend %com-600;
+        color: #fff;
+        padding: 10px 0 28px 0;
+    }
+    &__items{
+        background-color: $span;
+        max-width: 388px;
+        height: 74px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item{
+        @extend %com-600;
+        font-size: 30px;
+        padding: 10px;
+    }
+    &__text{
+        @extend %com-400;
+        font-size: 16px;
+        padding-top: 6px;
+    }
+    &__subtabms{
+        @extend %com-400;
+        font-size: 32px;
+        line-height: 39.14px;
+        margin-top: 4px;
+        border-radius: 10px;
+    }
+    
+    &__item:first-child{
+        padding-left: 24px;
+    }
+    &__item:last-child{
+        padding-right: 24px;
+    }
 }
 
+.our-works{
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px 30px;
+    }
+    &__item{
+        max-width: 473px;
+        height: 400px;
+        &:hover{
+            cursor: url('../images/our-works/cursor.svg'), pointer;
+        }
+    }
+}
 
-
+/* @extend %com-600; */
 
 
 
