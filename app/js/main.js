@@ -1,4 +1,9 @@
 $(function(){
+  
+let inputs = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask("+38 999 999 9999");
+im.mask(inputs)
+
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
@@ -334,26 +339,7 @@ sass
      */
       
   
-  //////проверку на импут имейл  ////// 2 проверка на регулярку 
-  /* -------------------------------------------------------------------- */
-  /* function validateEmail(email){
-      let emaiL =  /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;;
-      return emaiL.test(email);
-  }
-  consultationBtn.addEventListener('click',(e)=>{
-    for(let i = 0; i < 2; i++){
-  if (validateEmail(consultationInpt[2].value) && consultationInpt[i].value !== ''&&
-      consultationInpt[i].value.length > 1){
-          modelGratitude.style.display = 'block'
-          consultationMistake.style.display = 'none'
-  }else{
-          modelGratitude.style.display = 'none'
-          consultationMistake.style.display = 'block'
-          e.preventDefault()    
-       }
-     }
-  }) */
-  
+
   //scrolling
   /* ----------------------------------- */
   /* let anchors = document.querySelectorAll('a[href*="#tabs"]')
@@ -369,24 +355,7 @@ sass
       } */
   
   
-    /* masktell маска телефон */
-  /*   ------------------------------------- */
-  /*     let element = document.querySelectorAll('#tel');
-      element.forEach((item)=>{
-        let maskOptions = {
-          mask: '+7(000)000-00-00',
-          lazy: false
-      } 
-        let mask = new IMask(item, maskOptions); 
-      }) */
-       
-      
-  /* Регулярка на Буквы 
-  -----------------------
-    function isLetter(str) {
-        return str.match(/[a-zA-Z]/);
-      }
-   */
+  
   
   /*регулярка на количество совпадений 
   ---------------------------------------------
