@@ -270,6 +270,7 @@
         align-items: flex-end;
         position: relative;
         &:hover{
+            transition: all 0.3s;
             cursor: url('../images/our-works/cursor.svg'), pointer;
             background-image: url('../images/our-works/arrow.svg');
             .our-works__box-images{
@@ -573,11 +574,39 @@
         @extend %com-400;
     }
 }
+.our-professionals{
+    &__items{
+        display: flex;
+        padding-top: 75px;
+        justify-content: space-evenly;
+    }
+    &__item{
+        text-align: center;
+    }
+    &__title{
+        padding-top: 18px;
+        @extend %com-600;
+        font-size: 19px;
+    }
+    &__sabtitle{
+        padding: 8px 0 8px 0;
+        @extend %com-600;
+        font-size: 14px;
+        color: #b8b7b7;
+    }
+    &__text{
+        max-width: 315px;
+        @extend %com-400;
+        font-size: 16px;
+        line-height: 19.57px;
+    }
+
+}
 
 .process-work{
     &__items{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding-top: 74px;
     }
     &__item{
@@ -621,10 +650,61 @@
     }
 }
 
+.work-experience{
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 75px;
+    }
+    .number{
+        width: 60px;
+        height: 60px;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    &__item{
+        width: 353px;
+        padding-top: 33px;
+        padding-bottom: 30px;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 87px;
+        &:hover{
+            background-color: #FFDC29;
+            cursor: url('../images/our-works/cursor-black.svg'), pointer;
+            transition:all 0.3s;
+            .number{
+                fill: #fff;
+            }
+            .border{
+                fill: #000;
+            }
+        }
+    }
+    &__title{
+        padding-top: 10px;
+        max-width: 243px;
+        @extend %Pl-700;
+        font-size: 22px;
+        margin: 0 auto;
+        text-transform: capitalize;
+        line-height: 29.33px;
+    }
+    &__text{
+        @extend %com-400;
+        font-size: 16px;
+        max-width: 270px;
+        padding-top: 10px;
+        margin: 0 auto;
+        line-height: 19.57px;
+
+    }
+}
+
 /* @extend %com-600; */
 /*  @extend %Pl-700
  */
-
 
 
 
