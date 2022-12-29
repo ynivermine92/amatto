@@ -1,0 +1,234 @@
+@media (max-width: 1220px) {
+ .menu{
+    &__list-item{
+        margin-right:-34px;
+        margin-left: 0px;
+    }
+    &__list-link{
+        font-size: 14px;
+    }
+    .uzer-mobil__tel{
+        font-size: 14px;
+    }
+ }
+ .uzer-mobil{
+   &__tel{
+    font-size: 14px;
+   }
+ }
+}
+@media (min-width: 990px) {
+    .menu{
+        &__btn-content--active{
+          display: none;
+        }
+    }
+}
+@media (max-width: 990px) {
+    .menu{
+        &__list{
+            display: none;
+        }
+        &__btn-content{
+            width: 200px;
+            .menu__list-item{
+                margin-left: 6px;
+                padding: 10px;
+            }
+        }
+        &__btn{
+            display: block;
+            width: 44px;
+            height: 30px;
+            border: none;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            span{
+                width: 32px;
+                height: 3px;
+                background-color: black;
+            }
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                width: 32px;
+                height: 3px;
+                background-color: black;
+            }
+            &::before{
+                top: 4px;
+            }
+            &::after{
+                bottom: 4px;
+            }
+        }
+    }
+    .uzer-mobil{
+        &__tel{
+         padding: 16px 16px;
+        }
+      }
+}
+@media (max-width: 650px) {
+    .uzer-mobil{
+        display: none;
+      }
+}
+@media (max-width: 500px) {
+    .header{
+        padding: 40px 10px;
+        .logo__img{
+            width: 131px;
+        }
+    }
+    .menu{
+        &__btn-mobil{
+            display: inline-flex;
+        }
+    }
+    .uzer-btn-mobil{
+        display: none;
+    }
+}
+
+//slider
+@media (max-width: 1220px) {
+    .top-slider{
+        &__title{
+            font-size: 40px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+    }
+    .title{
+        font-size: 40px;
+    }
+}
+@media (max-width: 1100px) {
+    .top-slider{
+        &__inner{
+            background-position: top,center;
+        }
+    }
+}
+@media (max-width: 500px) {
+
+    .top-slider{
+    &__inner{
+        max-width: 500px;
+        height: 600px;
+        background-size: cover;
+    }
+    &__title{
+        padding-top: 0px;
+    }
+    &__wrapper{
+        max-width: 320px;
+    }
+    &__subtitle{
+        max-width: 300px;
+    }
+    &__benefits{
+        max-width: 250px;
+    }
+    &__consultation-btnlink{
+        font-size: 15px;
+    }
+    }
+}
+//slider
+//clock
+
+
+@media (max-width: 1294px) {
+    .promo{
+    }
+/*     .inner{
+        max-width: 100%;
+     }
+    .title{
+        font-size: 30px;
+    } */
+}
+
+
+@media (max-width: 1300px) {
+    .our-works{
+        &__items{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item{
+            max-width: 473px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .our-works{
+    &__box{
+     
+     }
+    }
+}
+
+@media (max-width: 1350px) {
+    .benefit{
+        &__items{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__item{
+            margin: 10px;
+            padding: 20px 20px;
+        }
+      /*   &__order{
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &__box{
+            width: 320px;
+        }
+        &__order-subtitle{
+            font-size: 30px;
+        } */
+    }
+}
+@media (max-width: 1540px) {
+    .benefit{
+        &__inner{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__box{
+            margin-left: 0;
+        }
+        .title{
+            font-size: 80px;
+        }
+        &__order{
+            width:75%;
+        }
+    }
+}
+
+
+@media (max-width: 770px) {
+    .benefit{
+    
+    }
+} 
+
+
+
+
+/* @media (max-width: 350px) {
+    .benefit{
+    
+    }
+} */

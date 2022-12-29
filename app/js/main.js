@@ -1,6 +1,9 @@
 $(function(){
+$('.menu__btn').on('click',function(){
+  $('.menu__btn-content').toggleClass('menu__btn-content--active')
+})
   
-let inputs = document.querySelectorAll('input[type="tel"]');
+/*  let inputs = document.querySelectorAll('input[type="tel"]');
 let im = new Inputmask("+38 999 999 9999");
 im.mask(inputs)
 
@@ -54,7 +57,7 @@ im.mask(inputs)
     autoplay:true,
     autoplaySpeed:2000
 
-  });
+  });  */
 })
 
 /* 

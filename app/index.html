@@ -17,25 +17,66 @@
                     <img class="logo__img" src="images/logo.png" alt="">
                 </a>
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
                     <ul class="menu__list">
-                        <li class="menu__list-item ">Главная</li>
-                        <li class="menu__list-item">о нас</li>
-                        <li class="menu__list-item">Каталог</li>
-                        <li class="menu__list-item menu__list-item--active">Рассрочка</li>
-                        <li class="menu__list-item">блог</li>
-                        <li class="menu__list-item">контакты</li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link menu__list-link--active"href="#">Главная</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link"href="#">о нас</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link"href="#">Каталог</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link"href="#">Рассрочка</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link"href="#">блог</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link"href="#">контакты</a>
+                        </li>
                     </ul>
                 </nav>
-                <div class="uzer-mobil">
+                <div class="uzer-btn-mobil">
                     <a class="uzer-mobil__tel" href="tel:+309368159759">+309368159759</a>
                 </div>
+                
             </div>
+            <ul class="menu__btn-content">
+                <li class="menu__list-item">
+                    <a class="menu__list-link menu__list-link--active"href="#">Главная</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link"href="#">о нас</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link"href="#">Каталог</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link"href="#">Рассрочка</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link"href="#">блог</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link"href="#">контакты</a>
+                </li>
+
+                <div class="menu__btn-mobil">
+                    <a class="uzer-mobil__tel" href="tel:+309368159759">+309368159759</a>
+                </div>
+            </ul>
         </div>
     </header>
 
 
     <main class="main">
-        <section class="top-slider">
+<!--         <section class="top-slider">
+
             <div class="top-slider__container">
                 <div class="top-slider__inner" style="background-image:url('images/slider/slider.jpg');">
                     <div class="top-slider__wrapper">
@@ -144,7 +185,7 @@
 
             </div>
         </section>
-        <section class="promo">
+       <section class="promo">
             <div class="container">
                 <h2 class="title">Все еще не можете определиться с<br> выбором кухни?
                 </h2>
@@ -165,8 +206,12 @@
                 </div>
 
             </div>
-        </section>
-        <section class="clock" style="background-image:url('images/clock/clock.jpg');">
+        </section> -->
+         <section class="clock">
+            <picture>
+                <source srcset="images/clock/clock.jpg" media="(min-width: 650px)">
+                <img class="clock__images" src="images/clock/clock-mob.jpg" alt="MDN" style="width:auto;">
+               </picture>
             <div class="inner">
                 <div class="clock__wrapper">
                     <h2 class="title">Закажи <span>Кухню</span></h2>
@@ -202,7 +247,7 @@
 
             </div>
         </section>
-        <section class="our-works">
+      <!--   <section class="our-works">
             <div class="container">
                 <h2 class="title">Наши работы</h2>
                 <div class="our-works__items">
@@ -404,9 +449,24 @@
             <div class="container">
                 <h2 class="title">Наши видео кейсы</h2>
                 <div class="video-cases__items">
-                <div class="video-cases__item"></div>
-                <div class="video-cases__item"></div>
-                <div class="video-cases__item"></div>
+                <div class="video-cases__item">
+                    <div class="video-fashion__popup" style="background-image: url('images/video-fashion/video-fashion.jpg');">
+                        <a class="video-fashion__play" data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                        </a>
+                     </div>
+                </div>
+                <div class="video-cases__item">
+                    <div class="video-fashion__popup" style="background-image: url('images/video-fashion/video-fashion.jpg');">
+                        <a class="video-fashion__play" data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                        </a>
+                     </div>
+                </div>
+                <div class="video-cases__item">
+                    <div class="video-fashion__popup" style="background-image: url('images/video-fashion/video-fashion.jpg');">
+                        <a class="video-fashion__play" data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                        </a>
+                     </div>
+                </div>
                 </div>
             </div>
             <div class="video-cases__contact">
@@ -428,7 +488,6 @@
             <div class="video-fashion__inner">
                  <div class="video-fashion__popup" style="background-image: url('images/video-fashion/video-fashion.jpg');">
                     <a class="video-fashion__play" data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                        <img src="images/icons/play-btn.svg" alt="video play button">
                     </a>
                  </div>
             </div>
@@ -547,10 +606,10 @@
                         <div class="work-experience__item">
                             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_142_191)">
-                                <path class="border"d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#FFDC29"/>
-                                <path class="border"d="M39.98 58.2978C49.1572 55.061 56.2873 47.488 58.9091 38.0383L34.4988 13.6279C34.4988 13.6279 24.1028 22.335 24.5296 24.7244L29.2989 29.4361L27.7019 46.0197L39.98 58.2978Z" fill="#FFA929"/>
-                                <path class="number" d="M34.4988 13.6279V46.0197H27.702V21.9892L24.5297 24.7244L20.0918 19.5763L26.5816 13.9806L26.9906 13.6279H34.4988Z" fill="#F8FFFB"/>
-                                <path class="number" d="M30 13.6279H34.4988V46.0197H30V13.6279Z" fill="#D8D8D8"/>
+                                <path class="number"d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#FFDC29"/>
+                                <path class="number"d="M39.98 58.2978C49.1572 55.061 56.2873 47.488 58.9091 38.0383L34.4988 13.6279C34.4988 13.6279 24.1028 22.335 24.5296 24.7244L29.2989 29.4361L27.7019 46.0197L39.98 58.2978Z" fill="#FFA929"/>
+                                <path d="M34.4988 13.6279V46.0197H27.702V21.9892L24.5297 24.7244L20.0918 19.5763L26.5816 13.9806L26.9906 13.6279H34.4988Z" fill="#F8FFFB"/>
+                                <path  d="M30 13.6279H34.4988V46.0197H30V13.6279Z" fill="#D8D8D8"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0_142_191">
@@ -567,10 +626,10 @@
                         <div class="work-experience__item">
                             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_142_208)">
-                                <path d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#FFDC29"/>
-                                <path d="M33.2331 59.8263C46.1278 58.4443 56.5764 48.8931 59.3027 36.4496L39.9589 17.1057C39.9589 17.1057 24.1332 16.6684 18.4167 26.0703L26.8405 34.5154L19.3392 46.0196L33.2331 59.8263Z" fill="#FFA929"/>
-                                <path class="num"  d="M42.4779 46.0196H19.3393V38.2092L34.1996 26.9588C36.0839 25.5322 35.6298 23.5429 35.4459 22.9672C35.2685 22.4126 34.5139 20.5976 32.2459 20.5314C32.1954 20.53 32.1065 20.5292 32.0709 20.5289H29.4433C25.5727 20.5289 25.272 24.7703 25.272 26.0703H18.4169C18.4169 18.7714 22.9511 13.6738 29.4433 13.6738L32.1096 13.6739C32.1096 13.6739 32.3337 13.6759 32.4453 13.6791C36.878 13.8086 40.6185 16.635 41.9755 20.8797C43.3499 25.1791 41.9219 29.7105 38.3375 32.4242L29.4345 39.1645H42.478V46.0196H42.4779Z" fill="white"/>
-                                <path class="num"  d="M38.3372 32.4235L30.4538 38.3922V29.7938L34.1993 26.9584C36.0833 25.5319 35.6294 23.5426 35.4462 22.9671C35.2689 22.4116 34.5136 20.5973 32.2455 20.5312C32.1947 20.5301 32.1061 20.5289 32.0706 20.5289H30.4537V13.6738H32.1096C32.1096 13.6738 32.333 13.6761 32.4452 13.6785C36.8774 13.8084 40.6181 16.6344 41.975 20.8799C43.3496 25.1784 41.9219 29.7099 38.3372 32.4235Z" fill="white"/>
+                                <path class="number" d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#FFDC29"/>
+                                <path class="number" d="M33.2331 59.8263C46.1278 58.4443 56.5764 48.8931 59.3027 36.4496L39.9589 17.1057C39.9589 17.1057 24.1332 16.6684 18.4167 26.0703L26.8405 34.5154L19.3392 46.0196L33.2331 59.8263Z" fill="#FFA929"/>
+                                <path  d="M42.4779 46.0196H19.3393V38.2092L34.1996 26.9588C36.0839 25.5322 35.6298 23.5429 35.4459 22.9672C35.2685 22.4126 34.5139 20.5976 32.2459 20.5314C32.1954 20.53 32.1065 20.5292 32.0709 20.5289H29.4433C25.5727 20.5289 25.272 24.7703 25.272 26.0703H18.4169C18.4169 18.7714 22.9511 13.6738 29.4433 13.6738L32.1096 13.6739C32.1096 13.6739 32.3337 13.6759 32.4453 13.6791C36.878 13.8086 40.6185 16.635 41.9755 20.8797C43.3499 25.1791 41.9219 29.7105 38.3375 32.4242L29.4345 39.1645H42.478V46.0196H42.4779Z" fill="white"/>
+                                <path d="M38.3372 32.4235L30.4538 38.3922V29.7938L34.1993 26.9584C36.0833 25.5319 35.6294 23.5426 35.4462 22.9671C35.2689 22.4116 34.5136 20.5973 32.2455 20.5312C32.1947 20.5301 32.1061 20.5289 32.0706 20.5289H30.4537V13.6738H32.1096C32.1096 13.6738 32.333 13.6761 32.4452 13.6785C36.8774 13.8084 40.6181 16.6344 41.975 20.8799C43.3496 25.1784 41.9219 29.7099 38.3372 32.4235Z" fill="white"/>
                                 <path d="M30.4539 39.1641H42.4775V46.0192H30.4539V39.1641Z" fill="white"/>
                                 </g>
                                 <defs>
@@ -587,9 +646,9 @@
                         <div class="work-experience__item">
                             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_142_216)">
-                                <path d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#FFCC29"/>
-                                <path d="M30.253 40.1247L26.333 36.6478L22.0638 42.5514L38.3383 58.8244C48.4264 55.9112 56.328 47.8464 59.0108 37.6627L38.3215 16.9736L19.3899 22.185L27.7016 30.4788L27.2768 32.3697L33.8058 38.6837C33.8058 38.6836 31.5625 40.3668 30.253 40.1247Z" fill="#FFA929"/>
-                                <path d="M38.3215 16.9739C36.4415 14.8787 33.3015 13.6279 29.9219 13.6279C29.237 13.6279 28.5501 13.6908 27.8802 13.8149L27.6739 13.853C25.6175 14.2329 23.7545 15.1782 22.2862 16.5863C20.8475 17.967 19.8863 19.7011 19.5065 21.6011L19.3898 22.1853L26.3328 22.7106L26.474 22.3457C26.8764 21.3062 27.8465 20.5273 29.0056 20.313L29.212 20.2749C30.5214 20.033 31.8661 20.4747 32.7221 21.4286C33.857 22.6929 33.7437 24.7241 32.4745 25.8642C31.8597 26.4167 28.8334 27.0545 27.8268 27.0126L27.2768 26.989V32.37L27.8268 32.3465C28.8401 32.3039 31.8599 32.9425 32.4746 33.4948C33.7437 34.6349 33.857 36.6661 32.722 37.9306C31.8661 38.8844 30.5213 39.3262 29.2118 39.0842L29.0057 39.0461C27.8465 38.8317 26.8764 38.0528 26.474 37.0133L26.3328 36.6484L19.3898 37.1738L19.5065 37.758C19.8862 39.6579 20.8473 41.3921 22.2863 42.7729C23.7544 44.181 25.6175 45.1261 27.6739 45.506L27.88 45.5441C28.5501 45.6682 29.237 45.7312 29.9219 45.7312C33.3015 45.7312 36.4415 44.4803 38.3214 42.3852C41.4892 38.8553 41.3399 33.3673 38.0511 29.6795C41.3399 25.9917 41.4893 20.5037 38.3215 16.9739Z" fill="#F8FFFB"/>
+                                <path class="number" d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#FFCC29"/>
+                                <path class="number" d="M30.253 40.1247L26.333 36.6478L22.0638 42.5514L38.3383 58.8244C48.4264 55.9112 56.328 47.8464 59.0108 37.6627L38.3215 16.9736L19.3899 22.185L27.7016 30.4788L27.2768 32.3697L33.8058 38.6837C33.8058 38.6836 31.5625 40.3668 30.253 40.1247Z" fill="#FFA929"/>
+                                <path  d="M38.3215 16.9739C36.4415 14.8787 33.3015 13.6279 29.9219 13.6279C29.237 13.6279 28.5501 13.6908 27.8802 13.8149L27.6739 13.853C25.6175 14.2329 23.7545 15.1782 22.2862 16.5863C20.8475 17.967 19.8863 19.7011 19.5065 21.6011L19.3898 22.1853L26.3328 22.7106L26.474 22.3457C26.8764 21.3062 27.8465 20.5273 29.0056 20.313L29.212 20.2749C30.5214 20.033 31.8661 20.4747 32.7221 21.4286C33.857 22.6929 33.7437 24.7241 32.4745 25.8642C31.8597 26.4167 28.8334 27.0545 27.8268 27.0126L27.2768 26.989V32.37L27.8268 32.3465C28.8401 32.3039 31.8599 32.9425 32.4746 33.4948C33.7437 34.6349 33.857 36.6661 32.722 37.9306C31.8661 38.8844 30.5213 39.3262 29.2118 39.0842L29.0057 39.0461C27.8465 38.8317 26.8764 38.0528 26.474 37.0133L26.3328 36.6484L19.3898 37.1738L19.5065 37.758C19.8862 39.6579 20.8473 41.3921 22.2863 42.7729C23.7544 44.181 25.6175 45.1261 27.6739 45.506L27.88 45.5441C28.5501 45.6682 29.237 45.7312 29.9219 45.7312C33.3015 45.7312 36.4415 44.4803 38.3214 42.3852C41.4892 38.8553 41.3399 33.3673 38.0511 29.6795C41.3399 25.9917 41.4893 20.5037 38.3215 16.9739Z" fill="#F8FFFB"/>
                                 <path d="M38.0508 29.6789C41.3402 33.3668 41.4891 38.8547 38.3215 42.3856C36.4559 44.4633 33.3504 45.7113 30 45.7301V39.1477C31.0406 39.1278 32.0391 38.693 32.7223 37.9301C33.8566 36.6656 33.7441 34.6348 32.475 33.4945C32.1352 33.1899 31.0629 32.8582 30 32.6297V26.7281C31.0629 26.4996 32.1352 26.1691 32.475 25.8645C33.7441 24.7242 33.8566 22.6934 32.7223 21.4289C32.0391 20.666 31.0406 20.2313 30 20.2113V13.6289C33.3504 13.6477 36.4559 14.8945 38.3215 16.9734C41.4891 20.5031 41.3402 25.991 38.0508 29.6789Z" fill="#D8D8D8"/>
                                 </g>
                                 <defs>
@@ -607,8 +666,8 @@
                         <div class="work-experience__item">
                             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_142_225)">
-                                <path d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#FFCC29"/>
-                                <path d="M59.6294 34.7189L38.891 13.9805L17.9824 37.9723L38.721 58.7108C49.5749 55.4181 57.8246 46.1408 59.6294 34.7189Z" fill="#FFA929"/>
+                                <path class="number" d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#FFCC29"/>
+                                <path class="number" d="M59.6294 34.7189L38.891 13.9805L17.9824 37.9723L38.721 58.7108C49.5749 55.4181 57.8246 46.1408 59.6294 34.7189Z" fill="#FFA929"/>
                                 <path d="M38.891 31.1754V13.9805H30.0645L17.9824 31.3137V37.9723H32.0941V46.0196H38.891V37.9723H43.2352V31.1754H38.891ZM32.0941 31.1754H26.3637L32.0941 22.9559V31.1754Z" fill="#F8FFFB"/>
                                 <path d="M38.891 31.1754V13.9805H30.0645L30 14.073V25.9594L32.0941 22.9559V31.1754H30V37.9723H32.0941V46.0196H38.891V37.9723H43.2352V31.1754H38.891Z" fill="#D8D8D8"/>
                                 </g>
@@ -637,9 +696,154 @@
                 </div>    
             </div>
         </section>
+        <section class="blog">
+            <div class="container">
+                <h2 class="title">Блог</h2>
+                 <div class="blog__items">
+                    <div class="blog__item">
+                        <img src="images/blog/1.jpg" alt="">
+                        <div class="blog__subtitle">
+                            март 11, 2022
+                        </div>
+                        <div class="blog__title">Из чего складывается стоимость кухни?
+                        </div>
+                        <div class="blog__text">
+                            рассказывает дизайнер Светлана
+                        </div>
+                        <a class="blog__btn" href="">Прочесть за 7 минут</a>
+                    </div>
+
+                    <div class="blog__item">
+                        <img src="images/blog/3.jpg" alt="">
+                        <div class="blog__subtitle">
+                            март 11, 2022
+                        </div>
+                        <div class="blog__title">Из чего складывается стоимость кухни?
+                        </div>
+                        <div class="blog__text">
+                            рассказывает дизайнер Светлана
+                        </div>
+                        <a class="blog__btn" href="">Прочесть за 7 минут</a>
+                    </div>
+
+                    <div class="blog__item">
+                        <img src="images/blog/2.jpg" alt="">
+                        <div class="blog__subtitle">
+                            март 11, 2022
+                        </div>
+                        <div class="blog__title">Из чего складывается стоимость кухни?
+                        </div>
+                        <div class="blog__text">
+                            рассказывает дизайнер Светлана
+                        </div>
+                        <a class="blog__btn" href="">Прочесть за 7 минут</a>
+                    </div>
+                 </div>
+            </div>
+        </section> -->
     </main>
-    <footer class="footer">
-    </footer>
+   <!--  <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo-box">
+                <svg class="footer__logo">
+                    <use xlink:href="images/footer/footer.svg#log"></use>
+                    </svg>
+                <p class="footer__text">
+                    При создании кухни наши дизайнеры учитывают пожелания клиента, дополняя их своими идеями что бы сделать кухню еще лучше! Понравился дизайн? Напиши нам или закажи консультацию дизайнера amatto.
+                </p>
+            </div>
+            <div class="footer__links">
+                <div class="footer__title">Links</div>
+                 <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a class="footer__list-link"href="#">Главная</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link"href="#">О Нас</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link"href="#">Каталог</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link"href="#">Рассрочка</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link"href="#">блог</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link"href="#">Контакты</a>
+                    </li>
+                        
+
+                 </ul>
+            </div>
+
+
+                <div class="footer__content">
+                    <div class="footer__title">Republic of Moldova</div>
+                    <ul class="footer__contact-list">
+
+                        <li class="footer__contact-item">
+                            <svg class="footer__local">
+                                <use xlink:href="images/footer/location.svg#location"></use>
+                                </svg>
+                            <a  class="footer__contact-location" href="#">
+                                Chisinau,15/2 Trandafirilor Str.
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <svg class="footer__tell">
+                                <use xlink:href="images/footer/telephon.svg#telefon"></use>
+                                </svg>
+                            <a class="footer__contact-phone" href="tel:+309368159759">+309368159759</a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <svg class="footer__email">
+                                <use xlink:href="images/footer/mail.svg#mail"></use>
+                                </svg>
+                            <a class="footer__contact-email" href="hello@amatto.md">hello@amatto.md</a>
+                        </li>
+                    </ul>
+
+            </div>
+
+            <div class="footer__social">
+                <div class="footer__title">Social Links</div>
+                <div class="footer__social-items">
+                <a class="footer__social-item" href="#">
+                    <svg class="footer__social-link">
+                        <use xlink:href="images/footer/Facebook.svg#Fac"></use>
+                        </svg>
+                </a>
+                    <a class="footer__social-item" href="#">
+                    <svg class="footer__social-link">
+                        <use xlink:href="images/footer/Instagram.svg#Ins"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social-item" href="#">
+                    <svg class="footer__social-link">
+                        <use xlink:href="images/footer/LinkedIn.svg#Lin"></use>
+                        </svg>
+                    </a>
+                <a class="footer__social-item" href="#">
+                    <svg class="footer__social-link">
+                        <use xlink:href="images/footer/Telegram.svg#Tel"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social-item" href="#">
+                    <svg class="footer__social-link">
+                        <use xlink:href="images/footer/YouTube.svg#You"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__reserved">
+            © 2022 Amatto. All Rights Reserved.
+        </div>
+        </div>
+    </footer>  -->
     <script src="js/main.min.js"></script>
 </body>
 
