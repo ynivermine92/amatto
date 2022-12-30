@@ -56,7 +56,6 @@ im.mask(inputs)
     fade:true,
     autoplay:true,
     autoplaySpeed:2000
-
   }); 
 })
 
