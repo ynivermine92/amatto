@@ -1,5 +1,6 @@
 $(function(){
 $('.menu__btn').on('click',function(){
+  debugger;
   $('.menu__btn-content').toggleClass('menu__btn-content--active')
 })
   

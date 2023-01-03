@@ -378,6 +378,7 @@
     &__items{
      display: flex;
      justify-content: space-evenly;
+     padding-bottom: 60px;
     }
     &__item{
      padding: 30px 38px;
@@ -400,12 +401,18 @@
         max-width: 236px;
         line-height: 19.57px;
     }
-    &__order{
+    &__inner{
         height: 555px;
-        margin-top: 94px;
+        position: relative;
+    }
+    &__images{
+     position: absolute;
+     width: 100% !important;
+     height: 100%;
     }
     
     &__box{
+        position: relative;
         max-width: 616px;
         margin-left: auto;
         text-align: center;
@@ -418,9 +425,6 @@
                 display: none;
             }
         }
-    }
-    .benefit__inner{
-        display: flex;
     }
     &__order-subtitle{
         @extend %com-600;
