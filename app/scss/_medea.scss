@@ -1,4 +1,4 @@
-/*  @media (max-width: 1220px) {
+ @media (max-width: 1220px) {
  .menu{
     &__list-item{
         margin-right:-34px;
@@ -168,6 +168,17 @@
             margin: 10px;
           }
       }
+    .process-work{
+        &__items{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item{
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        
+    }
   }
 @media (max-width: 400px) {
     .promo{
@@ -190,7 +201,7 @@
         }
     }
 } 
-*/
+
 
 @media (max-width: 1560px) {
     .benefit{
@@ -198,6 +209,19 @@
             position: inherit;
             width: 100%;
             height: 100%;
+        }
+        &__inner{
+            height: auto;
+            
+        }
+    }
+    .video-cases{
+        &__items{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item{
+            margin: 10px;
         }
     }
 } 
@@ -210,6 +234,12 @@
         &__item{
             margin: 10px;
             padding: 20px 20px;
+        }
+    }
+    .blog{
+        &__items{
+            justify-content: center;
+            flex-wrap: wrap;
         }
     }
 }
@@ -228,10 +258,237 @@
     }
 }
 
- @media (max-width: 1000px) {
-        .title{
+
+@media (max-width: 650px) {
+    .video-cases{
+        &__contact-title{
             padding-top: 60px;
-            line-height: 68px;
+            font-size: 25px;
+            line-height:25.32px;
         }
+        &__contact{
+            background-image: url('../images/video-cases/form-mob.jpg');
+        }
+        &__form{
+            padding-top: 20px;
+        }
+        &__form-input{
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        &__form-btn{
+            width: 300px;
+            margin-left: 0;
+        }
+    }
+    .video-fashion{
+        &__popup-video{
+            background-image: url("../images/video-fashion/video-fashion-mob.jpg") !important;
+        }
+        .title{
+            line-height: 30px;
+        }
+    }
 }
- 
+@media (max-width: 500px) {
+    .video-cases{
+        .video-fashion__popup{
+            a{
+                left: 83px;
+                width: 200px;
+            }
+        }
+    }
+    .work-experience{
+        &__item{
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (max-width: 350px) {
+    .video-cases{
+        .video-fashion__popup{
+            a{
+                left: 38px;
+            }
+        }
+
+    }
+}
+@media (max-width: 1560px) {
+    .biy{
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .biy{
+        &__images{
+            display: none;
+        }
+        &__from-wapper{
+            display: block;
+            height: auto;
+        }
+        &__from{
+            text-align: center;
+        }
+        &__from-textinput{
+            padding-bottom:10px;
+        }
+        &__from-subtitle{
+            display: block;
+            padding-left: 0px !important;
+        }
+        &__from-inpt+.biy__from-inpt {
+            margin-left: 0px;
+        }
+    }
+      
+}
+@media (max-width:470px) {
+    .biy{
+        &__from-finallysum{
+            font-size: 24px;
+
+        }
+        .biy__from{
+            padding: 34px 5px 58px 5px;
+        }
+        &__from-finallysum::after{
+            width: none;
+        } 
+        &__from-finallysum::after {
+            content: "";
+            position: absolute;
+            background-color: #f1f0f0;
+            right: -5px;
+            height: 58px;
+            width: 5px;
+        }
+    }
+    .blog{
+        &__item{
+            padding: 15px 0px 40px 0px;
+        }
+        img{
+            max-width: 260px;
+        }
+    }
+}
+@media (max-width:1450px) {
+    .work-experience{
+        &__items{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item{
+            margin-left: 20px;
+        }
+    }
+    .our-professionals{
+        .our-professionals__items{
+            flex-wrap: wrap;
+        }
+    }
+    .footer{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__logo-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text{
+            text-align: center;
+        }
+        &__links{
+            .footer__list{
+                display: none;
+            }
+         }
+         &__links--active{
+            .footer__list{
+                display: block;
+            }
+         } 
+         &__content{
+            .footer__contact-list{
+                display: none;
+            }
+         }
+         &__content--active{
+            .footer__contact-list{
+                display: block;
+            }
+         }
+         &__links{
+            padding-top: 40px;
+            position: relative;
+            font-size: 20px;
+            cursor: pointer;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-image: url('../images/top.svg');
+                background-repeat: no-repeat;
+                left: 118px;
+                top: 46px;
+            }
+         }
+         &__content{
+            padding-top: 20px;
+            position: relative;
+            cursor: pointer;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-image: url('../images/top.svg');
+                background-repeat: no-repeat;
+                left: 306px;
+                top: 30px;
+            }
+         }
+         &__social{
+            padding-top: 20px;
+            .footer__title{
+                display: none;
+            }
+         }
+        &__title::before{
+            width: 0;
+        }
+        &__title{
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width:400px) {
+    .video-cases{
+        &__form-input{
+            width: 250px;
+        }
+        &__form-btn{
+            width: 250px;
+        }
+    }
+    .footer{
+        &__title{
+            font-size: 20px;
+        }
+        &__content::after{
+            left: 208px;
+            top: 23px;
+        }
+        &__links::after{
+            top: 41px;
+        }
+    }
+}

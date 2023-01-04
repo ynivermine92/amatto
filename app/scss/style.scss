@@ -451,9 +451,8 @@
     &__item{
         width: 460px;
         height: 264px;
-        background-color: #C4C4C4;
         .video-fashion__popup{
-            width: 460px;
+            max-width: 460px;
             height: 264px;
             background-size: 160%;
             a{
@@ -538,6 +537,10 @@
             left: 47%;
             top: 43%;
         }
+    }
+   &__images{
+        width: 100% !important;
+        object-fit: cover;
     }
 }
 .biy{
@@ -819,6 +822,7 @@
     max-width: 250px;
     height: 87px;
  }
+
  &__text{
     padding-top: 30px;
     max-width: 514px;
@@ -885,6 +889,7 @@
 &__social-link{
     display: inline-block;
     padding-top: 20px;
+    width: 30px;
 }
 &__social-link +.footer__social-link{
     margin-left: 10px;

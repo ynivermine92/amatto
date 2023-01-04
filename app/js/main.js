@@ -1,4 +1,22 @@
 $(function(){
+  
+  $('.footer__content').on('click',function(){
+    debugger;
+    $('.footer__content').toggleClass('footer__content--active')
+  })
+    
+
+
+
+
+  $('.footer__links').on('click',function(){
+    debugger;
+    $('.footer__links').toggleClass('footer__links--active')
+  })
+  
+
+
+
 $('.menu__btn').on('click',function(){
   debugger;
   $('.menu__btn-content').toggleClass('menu__btn-content--active')
